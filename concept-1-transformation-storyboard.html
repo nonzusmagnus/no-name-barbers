@@ -6,38 +6,40 @@
 <title>Concept 1: The Transformation — Storyboard | No Name Barbers</title>
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-:root{--bg:#0d0c0a;--card:#171512;--gold:#c9a86a;--cream:#f2e9d8;--muted:#9a917f;--line:#2a2620}
-body{background:var(--bg);color:var(--cream);font-family:Georgia,'Times New Roman',serif;line-height:1.6}
-header{padding:56px 24px 32px;text-align:center;border-bottom:1px solid var(--line);background:radial-gradient(ellipse at 50% 0%,#231d12 0%,#0d0c0a 65%)}
-.kicker{letter-spacing:.35em;text-transform:uppercase;font-size:11px;color:var(--gold);font-family:Arial,Helvetica,sans-serif}
-h1{font-size:clamp(28px,5vw,52px);margin:12px 0 8px;font-weight:400}
-h1 em{color:var(--gold);font-style:italic}
-.sub{font-family:Arial,Helvetica,sans-serif;color:var(--muted);font-size:13px;letter-spacing:.08em}
-.music{display:inline-block;margin-top:18px;border:1px solid var(--gold);border-radius:999px;padding:8px 20px;font-family:Arial,Helvetica,sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
-main{max-width:960px;margin:0 auto;padding:32px 20px 80px}
+:root{--bg:#f6f6f4;--card:#ffffff;--ink:#131313;--muted:#6e6e6e;--line:#e9e9e6;--accent:#131313;--gold:#b8934a}
+body{background:var(--bg);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;line-height:1.65;font-size:18px;-webkit-font-smoothing:antialiased}
+header{padding:64px 24px 36px;text-align:center;background:#fff;border-bottom:1px solid var(--line)}
+.kicker{letter-spacing:.3em;text-transform:uppercase;font-size:13px;color:var(--gold);font-weight:700}
+h1{font-size:clamp(32px,5vw,56px);margin:12px 0 8px;font-weight:800;letter-spacing:-.02em}
+h1 em{font-style:normal;background:var(--ink);color:#fff;padding:0 12px;border-radius:8px}
+.sub{color:var(--muted);font-size:15px;letter-spacing:.06em}
+.music{display:inline-block;margin-top:18px;background:var(--ink);color:#fff;border-radius:999px;padding:10px 24px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+main{max-width:1020px;margin:0 auto;padding:32px 20px 80px}
 .act{margin:40px 0}
-.act-head{display:flex;align-items:baseline;gap:16px;border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:20px}
-.act-num{font-family:Arial,sans-serif;background:var(--gold);color:#111;font-size:12px;font-weight:700;letter-spacing:.15em;padding:4px 12px;border-radius:4px;text-transform:uppercase;white-space:nowrap}
-.act-head h2{font-size:24px;font-weight:400}
-.time{margin-left:auto;font-family:Arial,sans-serif;font-size:12px;color:var(--muted);white-space:nowrap}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.act-head{display:flex;align-items:center;gap:14px;margin-bottom:20px}
+.act-num{background:var(--ink);color:#fff;font-size:13px;font-weight:800;letter-spacing:.18em;padding:7px 16px;border-radius:999px;text-transform:uppercase;white-space:nowrap}
+.act-head h2{font-size:26px;font-weight:800;letter-spacing:-.01em}
+.time{margin-left:auto;font-size:14px;color:var(--muted);background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;white-space:nowrap}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 @media(max-width:700px){.grid{grid-template-columns:1fr}}
-.shot{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden}
-.shot-visual{aspect-ratio:16/9;background:#000;display:flex;align-items:center;justify-content:center;position:relative;font-family:Arial,sans-serif}
-.shot-visual span.ph{color:#5a5346;font-size:12px;letter-spacing:.2em;text-transform:uppercase;text-align:center;padding:0 20px}
-.shot-visual::after{content:attr(data-lens);position:absolute;top:10px;left:10px;font-size:10px;letter-spacing:.15em;background:rgba(0,0,0,.7);border:1px solid var(--line);padding:3px 8px;border-radius:4px;color:var(--gold)}
-.shot-body{padding:16px 18px}
-.shot-body h3{font-size:15px;font-family:Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--gold);margin-bottom:6px}
-.shot-body p{font-size:14.5px;color:#ddd2bd}
-.shot-body p b{color:var(--cream)}
-.vo{border-left:3px solid var(--gold);background:#1e1a14;padding:18px 20px;border-radius:0 8px 8px 0;margin:16px 0;font-style:italic;font-size:16px}
-.vo small{display:block;font-style:normal;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.25em;color:var(--gold);margin-bottom:8px;text-transform:uppercase}
-.director{font-family:Arial,sans-serif;font-size:12.5px;color:var(--muted);margin:16px 0;padding:12px 16px;border:1px dashed #3a342a;border-radius:8px}
-.finale{text-align:center;padding:48px 20px;border:1px solid var(--gold);border-radius:12px;background:linear-gradient(180deg,#1c170f,#0d0c0a);margin-top:40px}
-.finale h2{font-size:30px;font-weight:400}
-.finale p{color:var(--muted);font-family:Arial,sans-serif;font-size:13px;margin-top:8px}
-footer{text-align:center;padding:24px;color:#5a5346;font-family:Arial,sans-serif;font-size:11px;letter-spacing:.15em;text-transform:uppercase}
-@media print{body{background:#fff;color:#111}header{background:#fff}.shot,.vo,.finale{break-inside:avoid}}
+.shot{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.06)}
+.shot-visual{aspect-ratio:16/9;background:#e5e5e2;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.shot-visual img{width:100%;height:100%;object-fit:cover;display:block}
+.shot-visual span.ph{color:#999;font-size:14px;letter-spacing:.18em;text-transform:uppercase;text-align:center;padding:0 20px}
+.shot-visual::after{content:attr(data-lens);position:absolute;top:12px;left:12px;font-size:12px;letter-spacing:.14em;font-weight:700;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);padding:5px 10px;border-radius:999px;color:var(--ink)}
+.shot-body{padding:20px 22px}
+.shot-body h3{font-size:16px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin-bottom:8px;font-weight:800}
+.shot-body p{font-size:17px;color:#3d3d3d}
+.shot-body p b{color:var(--ink)}
+.vo{background:#fff;border:1px solid var(--line);border-left:4px solid var(--ink);padding:22px 24px;border-radius:14px;margin:16px 0;font-size:19px;box-shadow:0 4px 14px rgba(0,0,0,.04)}
+.vo small{display:block;font-style:normal;font-size:13px;letter-spacing:.22em;color:var(--gold);font-weight:800;margin-bottom:8px;text-transform:uppercase}
+.director{font-size:16px;color:var(--muted);margin:16px 0;padding:14px 18px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.finale{text-align:center;padding:52px 20px;border-radius:20px;background:var(--ink);color:#fff;margin-top:40px}
+.finale h2{font-size:36px;font-weight:800;letter-spacing:-.02em}
+.finale p{color:#bbb;font-size:15px;margin-top:8px;letter-spacing:.1em}
+.finale .kicker{color:var(--gold)}
+footer{text-align:center;padding:28px;color:#999;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+@media print{body{background:#fff}.shot,.vo,.finale{break-inside:avoid;box-shadow:none}}
 </style>
 </head>
 <body>
@@ -49,16 +51,17 @@ footer{text-align:center;padding:24px;color:#5a5346;font-family:Arial,sans-serif
 <div class="sub" style="margin-top:10px">ATMOSPHERE: BRIGHT DAYTIME — natural daylight through storefront, sunlit shop, clean sharp shadows</div>
 </header>
 <main>
+<div class="vo" style="font-style:normal">A client walks into the shop during the day and takes his seat, trusting only the best to give him a lasting, head-turning cut without enhancers. As the work begins the film opens up to show three Black barbers working across the bright, white-walled modern shop, each handling a different craft, from clippers to straight razor to comb-out, built to hold up through night and week. Back in the original chair the cut is finished with a sharp line-up and brush-off, the client checks the mirror with a nod and walks out confident. It ends with all three barbers lined up together looking at camera as the logo lands.</div>
 
 <!-- OPENING -->
 <section class="act">
 <div class="act-head"><div class="act-num">Opening</div><h2>Arrival &amp; First Cut</h2><div class="time">~0:00 – 0:25</div></div>
 <div class="vo"><small>Voiceover</small>"There's people out there that go to just any barber. Me? I need the best of the best. Not the ones where the haircut fades quickly or is gone after a week. The one that actually lasts, the one that doesn't need all the enhancers. When I get in, I like to have something that turns heads."</div>
 <div class="grid">
-<div class="shot"><div class="shot-visual" data-lens="WIDE / TRACK"><span class="ph">[ Door DAY — sunlight in, client walks in ]</span></div><div class="shot-body"><h3>Shot 1 — The Entrance</h3><p>Daytime. Camera picks client up at the sunlit door, <b>tracks him toward the chair</b>. Daylight streams through storefront. Shop ambience, low jazz.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="MEDIUM"><span class="ph">[ Settle in — greet + prep ]</span></div><div class="shot-body"><h3>Shot 2 — Settle In</h3><p>He settles in, barber greets him, <b>starts prepping tools</b>. Cape on, tools laid out.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="MACRO"><span class="ph">[ Clippers — first pass ]</span></div><div class="shot-body"><h3>Shot 3 — Cut Begins</h3><p><b>First pass with clippers.</b> Close detail shots, hair falling, hands steady.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="MIRROR / CU"><span class="ph">[ Mirror — barber focused ]</span></div><div class="shot-body"><h3>Shot 4 — Reflection</h3><p><b>Mirror reflection</b>, barber focused in. Eye contact, precision.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="WIDE / TRACK"><img src="Shot-01-The-Entrance/download.jpg" alt="Shot 1 — The Entrance"></div><div class="shot-body"><h3>Shot 1 — The Entrance</h3><p>Daytime. Camera picks client up at the sunlit door, <b>tracks him toward the chair</b>. Daylight streams through storefront. Shop ambience, low jazz.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="MEDIUM"><img src="Shot-02-Settle-In/download.jpg" alt="Shot 2 — Settle In"></div><div class="shot-body"><h3>Shot 2 — Settle In</h3><p>He settles in, barber greets him, <b>starts prepping tools</b>. Cape on, tools laid out.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="MACRO"><img src="Shot-03-Cut-Begins/download.jpg" alt="Shot 3 — Cut Begins"></div><div class="shot-body"><h3>Shot 3 — Cut Begins</h3><p><b>First pass with clippers.</b> Close detail shots, hair falling, hands steady.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="MIRROR / CU"><img src="Shot-04-Reflection/download.jpg" alt="Shot 4 — Reflection"></div><div class="shot-body"><h3>Shot 4 — Reflection</h3><p><b>Mirror reflection</b>, barber focused in. Eye contact, precision.</p></div></div>
 </div>
 </section>
 
@@ -68,10 +71,10 @@ footer{text-align:center;padding:24px;color:#5a5346;font-family:Arial,sans-serif
 <div class="director">DIRECTION: Shift into the wider shop. Cut across the room <b>to the rhythm of the jazz, not fast-cut</b>. Let each barber hold screen. Hands, tools, focus, technique.</div>
 <div class="vo"><small>Voiceover</small>"It's not just about looking good for the day. I need something that holds up, whether I'm out at night or going through my week. That's the difference between a barber and a real one."</div>
 <div class="grid">
-<div class="shot"><div class="shot-visual" data-lens="WIDE"><span class="ph">[ Full shop DAY — sunlit, all chairs working ]</span></div><div class="shot-body"><h3>Shot 5 — The Shop Alive</h3><p>Bright daytime. <b>Multiple barbers, multiple chairs, multiple clients</b>, all working at once. Natural daylight, clean sharp look.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="CU"><span class="ph">[ Chair 1 — clippers ]</span></div><div class="shot-body"><h3>Shot 6 — Clippers</h3><p>Clippers at one chair. Fade work, detail.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="CU"><span class="ph">[ Chair 2 — straight razor ]</span></div><div class="shot-body"><h3>Shot 7 — Straight Razor</h3><p>Straight razor at another. Slow, deliberate strokes.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="CU"><span class="ph">[ Chair 3 — comb-out ]</span></div><div class="shot-body"><h3>Shot 8 — Comb-Out</h3><p>A <b>comb-out at a third</b>. Finish and finesse. Give each barber a moment.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="WIDE"><img src="Shot-05-The-Shop-Alive/download.jpg" alt="Shot 5 — The Shop Alive"></div><div class="shot-body"><h3>Shot 5 — The Shop Alive</h3><p>Bright daytime. <b>Multiple barbers, multiple chairs, multiple clients</b>, all working at once. Natural daylight, clean sharp look.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="CU"><img src="Shot-06-Clippers/download.jpg" alt="Shot 6 — Clippers"></div><div class="shot-body"><h3>Shot 6 — Clippers</h3><p>Clippers at one chair. Fade work, detail.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="CU"><img src="Shot-07-Straight-Razor/download.jpg" alt="Shot 7 — Straight Razor"></div><div class="shot-body"><h3>Shot 7 — Straight Razor</h3><p>Straight razor at another. Slow, deliberate strokes.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="CU"><img src="Shot-08-Comb-Out/download.jpg" alt="Shot 8 — Comb-Out"></div><div class="shot-body"><h3>Shot 8 — Comb-Out</h3><p>A <b>comb-out at a third</b>. Finish and finesse. Give each barber a moment.</p></div></div>
 </div>
 </section>
 
@@ -80,10 +83,10 @@ footer{text-align:center;padding:24px;color:#5a5346;font-family:Arial,sans-serif
 <div class="act-head"><div class="act-num">Resolution</div><h2>The Reveal</h2><div class="time">~0:50 – 1:10</div></div>
 <div class="vo"><small>Voiceover</small>"When I walk out of here, I don't just feel fresh. I feel sharp. That's the only kind of barber worth going to."</div>
 <div class="grid">
-<div class="shot"><div class="shot-visual" data-lens="CU"><span class="ph">[ Line-up — final details ]</span></div><div class="shot-body"><h3>Shot 9 — Final Details</h3><p>Back to original client. Cut finishing, <b>final details, line-up, brush-off</b>.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="MIRROR / MEDIUM"><span class="ph">[ Mirror check — nod ]</span></div><div class="shot-body"><h3>Shot 10 — Approval</h3><p>He checks himself in the mirror. <b>Slight nod or smirk.</b> Satisfied.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="TRACK OUT"><span class="ph">[ Walk out DAY — into daylight ]</span></div><div class="shot-body"><h3>Shot 11 — Walk Out</h3><p>He gets up, <b>walks out into bright daylight</b>. Confidence. Hold on sunlit door.</p></div></div>
-<div class="shot"><div class="shot-visual" data-lens="WIDE / LOCKED"><span class="ph">[ Barbers line up — camera ]</span></div><div class="shot-body"><h3>Shot 12 — The Line-Up</h3><p><b>All barbers line up together</b> inside the shop, looking straight at camera. Jazz resolves.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="CU"><img src="Shot-09-Final-Details/download.jpg" alt="Shot 9 — Final Details"></div><div class="shot-body"><h3>Shot 9 — Final Details</h3><p>Back to original client. Cut finishing, <b>final details, line-up, brush-off</b>.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="MIRROR / MEDIUM"><img src="Shot-10-Approval/download.jpg" alt="Shot 10 — Approval"></div><div class="shot-body"><h3>Shot 10 — Approval</h3><p>He checks himself in the mirror. <b>Slight nod or smirk.</b> Satisfied.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="TRACK OUT"><img src="Shot-11-Walk-Out/download.jpg" alt="Shot 11 — Walk Out"></div><div class="shot-body"><h3>Shot 11 — Walk Out</h3><p>He gets up, <b>walks out into bright daylight</b>. Confidence. Hold on sunlit door.</p></div></div>
+<div class="shot"><div class="shot-visual" data-lens="WIDE / LOCKED"><img src="Shot-12-The-Lineup/download.jpg" alt="Shot 12 — The Line-Up"></div><div class="shot-body"><h3>Shot 12 — The Line-Up</h3><p><b>All barbers line up together</b> inside the shop, looking straight at camera. Jazz resolves.</p></div></div>
 </div>
 </section>
 
